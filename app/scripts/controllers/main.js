@@ -9,7 +9,7 @@
  */
 angular.module('capTestApp')
   .controller('MainCtrl', function ($scope, events) {
-    $scope.current = current.query();
+    $scope.events = events.query();
 
     this.awesomeThings = [
       'HTML5 Boilerplate',
