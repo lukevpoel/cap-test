@@ -8,7 +8,9 @@
  * Controller of the capTestApp
  */
 angular.module('capTestApp')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', function ($scope, events) {
+    $scope.current = current.query();
+
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
