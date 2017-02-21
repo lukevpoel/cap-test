@@ -8,9 +8,10 @@
  * Factory in the capTestApp.
  */
 angular.module('capTestApp')
-  .factory('events', function ($resource) {
+  .factory('events', function ($resource, response) {
     // Service logic
     // ...
+    response.addHeader('Access-Control-Allow-Origin', '*');
 
 
     // Public API here
